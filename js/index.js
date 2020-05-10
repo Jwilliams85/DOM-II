@@ -1,32 +1,34 @@
 // Your code goes here
 const navLogoHeading = document.querySelector('.logo-heading');
-navLogoHeading.addEventListener("mouseover", (e) => e.target.style.transform = "scale(1.5)");
+navLogoHeading.addEventListener("mouseover", (e) => e.target.style.transform = "scale(2.5)");
+navLogoHeading.addEventListener('wheel', (e) =>
+target.style.transform = "scale(0.5)")
 
 const nav = document.querySelector(".nav");
-nav.addEventListener("dblclick", (e) => {
-    e.target.style.backgroundColor = 'yellow';
+nav.addEventListener("dblclick", (b) => {
+    b.target.style.backgroundColor = 'yellow';
   });
 
   const funBusBanner = document.querySelector(".intro > img" );
-  funBusBanner.addEventListener('drag', (e) => e.target.style.transform = 'scale(1.5)');
+  funBusBanner.addEventListener('wheel', (e) => e.target.style.transform = 'scale(1.5)');
 
 const btns = document.querySelectorAll('.destination .btn');
  btns.forEach(function (btn) {
      btn.addEventListener("mouseover", (e) => {
-         e.target.style.color = "black";
-         e.target.style.background = "red";
-         e.target.style.borderRadius = "0px";
+         a.target.style.color = "black";
+         a.target.style.background = "papayawhip";
+         a.target.style.borderRadius = "0px";
      });
  });
 
-const navlink = document.querySelectorAll('a.nav-link');
-navlink.forEach(link => {
-    link.addEventListener("click", e => e.preventDefault());
-    link.addEventListener("dblclick", e => {
-        e.preventDefault();
-        e.target.classList.toggle("red");
-    });
-});
+// const navlink = document.querySelectorAll('a.nav-link');
+// navlink.forEach(link => {
+//     link.addEventListener("click", e => e.preventDefault());
+//     link.addEventListener("dblclick", e => {
+//         e.preventDefault();
+//         e.target.classList.toggle("papayawhip");
+//     });
+// });
 
 const h2 = document.querySelectorAll('h2');
 h2.forEach(h => {
