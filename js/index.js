@@ -6,7 +6,8 @@ target.style.transform = "scale(0.5)")
 
 const nav = document.querySelector(".nav");
 nav.addEventListener("dblclick", (b) => {
-    b.target.style.backgroundColor = 'yellow';
+    b.target.style.backgroundColor = 'yellow'
+     //nav.style.background ="yellow";
   });
 
   const funBusBanner = document.querySelector(".intro > img" );
@@ -15,20 +16,20 @@ nav.addEventListener("dblclick", (b) => {
 const btns = document.querySelectorAll('.destination .btn');
  btns.forEach(function (btn) {
      btn.addEventListener("mouseover", (e) => {
-         a.target.style.color = "black";
-         a.target.style.background = "papayawhip";
-         a.target.style.borderRadius = "0px";
+         e.target.style.color = "black";
+         e.target.style.background = "papayawhip";
+         e.target.style.borderRadius = "0px";
      });
  });
 
-// const navlink = document.querySelectorAll('a.nav-link');
-// navlink.forEach(link => {
-//     link.addEventListener("click", e => e.preventDefault());
-//     link.addEventListener("dblclick", e => {
-//         e.preventDefault();
-//         e.target.classList.toggle("papayawhip");
-//     });
-// });
+const navlink = document.querySelectorAll('a.nav-link');
+navlink.forEach(link => {
+    link.addEventListener("click", e => e.preventDefault());
+    link.addEventListener("dblclick", e => {
+        e.preventDefault();
+        e.target.classList.toggle("red");
+    });
+});
 
 const h2 = document.querySelectorAll('h2');
 h2.forEach(h => {
@@ -48,12 +49,12 @@ header.addEventListener("mouseenter", e => {
      e.target.classList.remove("border");
  });
 
-const letsSignUP= document.querySelector('.text-content p');
-const letsGo = document.querySelector('#lets-go');
-letsGo.addEventListener("drag", () => {
-    letsSignUp.style.border = "2px solid black";
-    lletsSignUp.style.textAlign = "center";
-});
+// const letsSignUP= document.querySelector('.text-content p');
+// const letsGo = document.querySelector('#lets-go');
+// letsGo.addEventListener("dblclick", () => {
+//     letsSignUp.style.border = "2px solid black";
+//     letsSignUp.style.textAlign = "center";
+// });
 
 window.addEventListener("resize", () => {
     let header = document.querySelector('.main-navigation');
